@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/Users/theo/B1/build",
+  "command": "/usr/bin/c++ -DG4LIB_BUILD_DLL -DG4UI_USE_QT -DG4VIS_USE_OPENGLQT -DG4VIS_USE_RAYTRACER_QT -DG4VIS_USE_TOOLSSG_QT_GLES -DG4VIS_USE_TOOLSSG_QT_ZB -DPTL_BUILD_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/Users/theo/B1/include -isystem /Users/theo/geant4-v11.4.0-install/include/Geant4 -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/include/freetype2 -std=gnu++17 -arch arm64 -o CMakeFiles/exampleB1.dir/exampleB1.cc.o -c /Users/theo/B1/exampleB1.cc",
+  "file": "/Users/theo/B1/exampleB1.cc",
+  "output": "CMakeFiles/exampleB1.dir/exampleB1.cc.o"
+},
+{
+  "directory": "/Users/theo/B1/build",
+  "command": "/usr/bin/c++ -DG4LIB_BUILD_DLL -DG4UI_USE_QT -DG4VIS_USE_OPENGLQT -DG4VIS_USE_RAYTRACER_QT -DG4VIS_USE_TOOLSSG_QT_GLES -DG4VIS_USE_TOOLSSG_QT_ZB -DPTL_BUILD_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/Users/theo/B1/include -isystem /Users/theo/geant4-v11.4.0-install/include/Geant4 -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/include/freetype2 -std=gnu++17 -arch arm64 -o CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o -c /Users/theo/B1/src/ActionInitialization.cc",
+  "file": "/Users/theo/B1/src/ActionInitialization.cc",
+  "output": "CMakeFiles/exampleB1.dir/src/ActionInitialization.cc.o"
+},
+{
+  "directory": "/Users/theo/B1/build",
+  "command": "/usr/bin/c++ -DG4LIB_BUILD_DLL -DG4UI_USE_QT -DG4VIS_USE_OPENGLQT -DG4VIS_USE_RAYTRACER_QT -DG4VIS_USE_TOOLSSG_QT_GLES -DG4VIS_USE_TOOLSSG_QT_ZB -DPTL_BUILD_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/Users/theo/B1/include -isystem /Users/theo/geant4-v11.4.0-install/include/Geant4 -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/include/freetype2 -std=gnu++17 -arch arm64 -o CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o -c /Users/theo/B1/src/DetectorConstruction.cc",
+  "file": "/Users/theo/B1/src/DetectorConstruction.cc",
+  "output": "CMakeFiles/exampleB1.dir/src/DetectorConstruction.cc.o"
+},
+{
+  "directory": "/Users/theo/B1/build",
+  "command": "/usr/bin/c++ -DG4LIB_BUILD_DLL -DG4UI_USE_QT -DG4VIS_USE_OPENGLQT -DG4VIS_USE_RAYTRACER_QT -DG4VIS_USE_TOOLSSG_QT_GLES -DG4VIS_USE_TOOLSSG_QT_ZB -DPTL_BUILD_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/Users/theo/B1/include -isystem /Users/theo/geant4-v11.4.0-install/include/Geant4 -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/include/freetype2 -std=gnu++17 -arch arm64 -o CMakeFiles/exampleB1.dir/src/EventAction.cc.o -c /Users/theo/B1/src/EventAction.cc",
+  "file": "/Users/theo/B1/src/EventAction.cc",
+  "output": "CMakeFiles/exampleB1.dir/src/EventAction.cc.o"
+},
+{
+  "directory": "/Users/theo/B1/build",
+  "command": "/usr/bin/c++ -DG4LIB_BUILD_DLL -DG4UI_USE_QT -DG4VIS_USE_OPENGLQT -DG4VIS_USE_RAYTRACER_QT -DG4VIS_USE_TOOLSSG_QT_GLES -DG4VIS_USE_TOOLSSG_QT_ZB -DPTL_BUILD_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/Users/theo/B1/include -isystem /Users/theo/geant4-v11.4.0-install/include/Geant4 -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/include/freetype2 -std=gnu++17 -arch arm64 -o CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o -c /Users/theo/B1/src/PrimaryGeneratorAction.cc",
+  "file": "/Users/theo/B1/src/PrimaryGeneratorAction.cc",
+  "output": "CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o"
+},
+{
+  "directory": "/Users/theo/B1/build",
+  "command": "/usr/bin/c++ -DG4LIB_BUILD_DLL -DG4UI_USE_QT -DG4VIS_USE_OPENGLQT -DG4VIS_USE_RAYTRACER_QT -DG4VIS_USE_TOOLSSG_QT_GLES -DG4VIS_USE_TOOLSSG_QT_ZB -DPTL_BUILD_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/Users/theo/B1/include -isystem /Users/theo/geant4-v11.4.0-install/include/Geant4 -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/include/freetype2 -std=gnu++17 -arch arm64 -o CMakeFiles/exampleB1.dir/src/RunAction.cc.o -c /Users/theo/B1/src/RunAction.cc",
+  "file": "/Users/theo/B1/src/RunAction.cc",
+  "output": "CMakeFiles/exampleB1.dir/src/RunAction.cc.o"
+},
+{
+  "directory": "/Users/theo/B1/build",
+  "command": "/usr/bin/c++ -DG4LIB_BUILD_DLL -DG4UI_USE_QT -DG4VIS_USE_OPENGLQT -DG4VIS_USE_RAYTRACER_QT -DG4VIS_USE_TOOLSSG_QT_GLES -DG4VIS_USE_TOOLSSG_QT_ZB -DPTL_BUILD_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/Users/theo/B1/include -isystem /Users/theo/geant4-v11.4.0-install/include/Geant4 -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -isystem /opt/homebrew/include/freetype2 -std=gnu++17 -arch arm64 -o CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o -c /Users/theo/B1/src/SteppingAction.cc",
+  "file": "/Users/theo/B1/src/SteppingAction.cc",
+  "output": "CMakeFiles/exampleB1.dir/src/SteppingAction.cc.o"
+}
+]
