@@ -1,0 +1,12 @@
+# Build artifacts
+build/
+*.o
+*.out
+
+# Geant4 output
+*.root
+
+# Editor/OS
+.vscode/
+.cache/
+.DS_Store
