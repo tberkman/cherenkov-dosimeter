@@ -53,6 +53,8 @@ class SteppingAction : public G4UserSteppingAction
   private:
     EventAction* fEventAction = nullptr;
     G4LogicalVolume* fScoringVolume = nullptr;
+    double fMaxDepth = 0.;
+
 };
 
 }  // namespace B1
