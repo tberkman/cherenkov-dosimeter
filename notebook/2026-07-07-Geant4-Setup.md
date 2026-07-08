@@ -14,7 +14,7 @@
 - Fired electrons at 0.3, 1.0, 2.28 MeV into water geometry
 - Confirmed range grows with energy; 2.28 MeV stops ~1.1 cm deep
 - This matches my hand-calc (Katz-Penfold) and validates the risk assessment
-![alt text](katzpenfold.png)
+![alt text](katz-penfold.png)
 - Data from experiment:
 - [
     G4WT0 > New max depth: 0.832747 cm
