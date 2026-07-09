@@ -17,29 +17,29 @@
 ![alt text](resources/katz-penfold.png)
 - Data from experiment:
 - [
-    G4WT0 > New max depth: 0.832747 cm
-    G4WT6 > New max depth: 0.932728 cm
-    G4WT3 > New max depth: 0.922844 cm
-    G4WT5 > New max depth: 0.355193 cm
-    G4WT5 > New max depth: 0.55975 cm
-    G4WT5 > New max depth: 0.681704 cm
-    G4WT5 > New max depth: 0.720043 cm
-    G4WT5 > New max depth: 0.772264 cm
-    G4WT0 > New max depth: 0.845974 cm
-    G4WT5 > New max depth: 0.778703 cm
-    G4WT4 > New max depth: 0.974149 cm
-    G4WT1 > New max depth: 1.00632 cm
-    G4WT2 > New max depth: 0.984367 cm
-    G4WT3 > New max depth: 0.960228 cm
-    G4WT0 > New max depth: 0.966079 cm
-    G4WT5 > New max depth: 0.823485 cm
-    G4WT2 > New max depth: 0.98717 cm
-    G4WT3 > New max depth: 0.960228 cm
-    G4WT0 > New max depth: 0.979311 cm
-    G4WT5 > New max depth: 0.941666 cm
-    G4WT0 > New max depth: 0.979484 cm
-    G4WT5 > New max depth: 1.01224 cm
-    G4WT5 > New max depth: 1.06413 cm
-    G4WT5 > New max depth: 1.06997 cm
+    G4WT0 > New max depth: 0.832747 cm \
+    G4WT6 > New max depth: 0.932728 cm \ 
+    G4WT3 > New max depth: 0.922844 cm \
+    G4WT5 > New max depth: 0.355193 cm \
+    G4WT5 > New max depth: 0.55975 cm \
+    G4WT5 > New max depth: 0.681704 cm \
+    G4WT5 > New max depth: 0.720043 cm \
+    G4WT5 > New max depth: 0.772264 cm \
+    G4WT0 > New max depth: 0.845974 cm \ 
+    G4WT5 > New max depth: 0.778703 cm \ 
+    G4WT4 > New max depth: 0.974149 cm \ 
+    G4WT1 > New max depth: 1.00632 cm \ 
+    G4WT2 > New max depth: 0.984367 cm \ 
+    G4WT3 > New max depth: 0.960228 cm \ 
+    G4WT0 > New max depth: 0.966079 cm \ 
+    G4WT5 > New max depth: 0.823485 cm \ 
+    G4WT2 > New max depth: 0.98717 cm \ 
+    G4WT3 > New max depth: 0.960228 cm \ 
+    G4WT0 > New max depth: 0.979311 cm \ 
+    G4WT5 > New max depth: 0.941666 cm \ 
+    G4WT0 > New max depth: 0.979484 cm \
+    G4WT5 > New max depth: 1.01224 cm \
+    G4WT5 > New max depth: 1.06413 cm \
+    G4WT5 > New max depth: 1.06997 cm \
 ]
 - ~1.07 cm, in agreement with ~1.1 cm ±5-10%
