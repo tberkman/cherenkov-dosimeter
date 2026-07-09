@@ -1,4 +1,4 @@
-## 2026-07-07
+## 2026-07-08
 
 **Worked on:** - Photon Budget Calculations
 - Wrote the full photon budget derivation and calculation
@@ -9,3 +9,4 @@
     - 1.5 MeV = ~63.1 Photons/electron\
     - 0.93 MeV = ~27.6 Photons/electron\ 
 ]
+- Will do spectrum averaging and so on tomorrow
