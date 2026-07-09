@@ -2,6 +2,7 @@
 
 **Worked on:** - Photon Budget Calculations
 - Wrote the full photon budget derivation and calculation
+    - See \analysis\photon-budget.ipynb
 - Will simulate in Geant4 later on
 - Results producted:
 - [ 
