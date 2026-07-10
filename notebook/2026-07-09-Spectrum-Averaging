@@ -1,0 +1,7 @@
+## 2026-07-08
+
+**Worked on:** - Photon Budget Calculations/Spectrum Averaging
+- Completed the photon budget calculation in full, added the weighted mean spectrum function
+    - See \analysis\photon-budget.ipynb
+- Will simulate in Geant4 later on
+- Resulted in a final photon budget of $1.26 * 10^5$ photons/second
