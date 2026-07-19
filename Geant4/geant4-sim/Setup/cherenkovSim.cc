@@ -68,7 +68,7 @@ int main(int argc, char** argv)
 
   // Physics list
   auto physicsList = new QBBC;
-  physicsList->SetVerboseLevel(1);
+  physicsList->SetVerboseLevel(0);
     physicsList->RegisterPhysics(new G4RadioactiveDecayPhysics());
 
   runManager->SetUserInitialization(physicsList);

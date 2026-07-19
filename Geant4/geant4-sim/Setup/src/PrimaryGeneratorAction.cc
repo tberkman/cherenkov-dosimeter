@@ -101,7 +101,7 @@ G4double x0 = 0.0;
 G4double y0 = 0.0;
 
 // Fixed the string bug: placing the point at the front face of your envelope box
-G4double z0 = -0.5 * envSizeZ; 
+G4double z0 = 0.0;
 
 fParticleGun->SetParticlePosition(G4ThreeVector(x0, y0, z0));
 
