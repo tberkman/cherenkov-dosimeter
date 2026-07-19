@@ -50,11 +50,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
 
   // default particle kinematic
 // Get the Ion Table to find isotopes
-G4IonTable* ionTable = G4ParticleTable::GetParticleTable()->GetIonTable();
-G4ParticleDefinition* ion = ionTable->GetIon(38, 90, 0.0);
 
-fParticleGun->SetParticleDefinition(ion);
-fParticleGun->SetParticleEnergy(0.0 * CLHEP::MeV); 
 fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
 }
 
@@ -78,7 +74,11 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
 
   G4double envSizeXY = 0;
   G4double envSizeZ = 0;
+G4IonTable* ionTable = G4ParticleTable::GetParticleTable()->GetIonTable();
+G4ParticleDefinition* ion = ionTable->GetIon(38, 90, 0.0);
 
+fParticleGun->SetParticleDefinition(ion);
+fParticleGun->SetParticleEnergy(0.0 * CLHEP::MeV); 
   if (!fEnvelopeBox) {
     G4LogicalVolume* envLV = G4LogicalVolumeStore::GetInstance()->GetVolume("Envelope");
     if (envLV) fEnvelopeBox = dynamic_cast<G4Box*>(envLV->GetSolid());
