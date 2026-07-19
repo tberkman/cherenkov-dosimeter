@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file SteppingAction.hh
-/// \brief Definition of the B1::SteppingAction class
+/// \brief Definition of the cherenkov::SteppingAction class
 
 #ifndef B1SteppingAction_h
 #define B1SteppingAction_h 1
@@ -34,7 +34,7 @@
 class G4LogicalVolume;
 class G4Step;
 
-namespace B1
+namespace cherenkov
 {
 
 class EventAction;
@@ -57,7 +57,7 @@ class SteppingAction : public G4UserSteppingAction
 
 };
 
-}  // namespace B1
+}  // namespace cherenkov
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

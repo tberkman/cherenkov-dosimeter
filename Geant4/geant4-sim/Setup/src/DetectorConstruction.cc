@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file DetectorConstruction.cc
-/// \brief Implementation of the B1::DetectorConstruction class
+/// \brief Implementation of the cherenkov::DetectorConstruction class
 
 #include "../include/DetectorConstruction.hh"
 
@@ -36,7 +36,7 @@
 #include "G4SystemOfUnits.hh"
 #include "G4Trd.hh"
 
-namespace B1
+namespace cherenkov
 {
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -111,4 +111,4 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-}  // namespace B1
+}  // namespace cherenkov

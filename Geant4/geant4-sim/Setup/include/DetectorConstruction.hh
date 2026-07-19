@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file DetectorConstruction.hh
-/// \brief Definition of the B1::DetectorConstruction class
+/// \brief Definition of the cherenkov::DetectorConstruction class
 
 #ifndef B1DetectorConstruction_h
 #define B1DetectorConstruction_h 1
@@ -34,7 +34,7 @@
 class G4VPhysicalVolume;
 class G4LogicalVolume;
 
-namespace B1
+namespace cherenkov
 {
 
 /// Detector construction class to define materials and geometry.
@@ -53,7 +53,7 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     G4LogicalVolume* fScoringVolume = nullptr;
 };
 
-}  // namespace B1
+}  // namespace cherenkov
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

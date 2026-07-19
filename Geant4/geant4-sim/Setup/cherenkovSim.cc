@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file exampleB1.cc
+/// \file cherenkovSim.cc
 /// \brief Main program of the basic/B1 example
 
 #include "ActionInitialization.hh"
@@ -37,7 +37,7 @@
 #include "G4VisExecutive.hh"
 // #include "Randomize.hh"
 
-using namespace B1;
+using namespace cherenkov;
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

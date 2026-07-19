@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file PrimaryGeneratorAction.cc
-/// \brief Implementation of the B1::PrimaryGeneratorAction class
+/// \brief Implementation of the cherenkov::PrimaryGeneratorAction class
 
 #include "PrimaryGeneratorAction.hh"
 
@@ -37,7 +37,7 @@
 #include "Randomize.hh"
 #include <CLHEP/Units/SystemOfUnits.h>
 
-namespace B1
+namespace cherenkov
 {
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -106,4 +106,4 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-}  // namespace B1
+}  // namespace cherenkov

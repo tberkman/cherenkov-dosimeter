@@ -1,4 +1,4 @@
-\page ExampleB1 Example B1
+\page cherenkovSim Example B1
 
  This example demonstrates a very simple application where an energy
  deposit is accounted in user actions and their associated objects
@@ -6,7 +6,7 @@
 
 ## GEOMETRY DEFINITION
 
-   The geometry is constructed in the B1::DetectorConstruction class.
+   The geometry is constructed in the cherenkov::DetectorConstruction class.
    The setup consists of a an envelope of box shape containing two
    volumes: a spherical cone and a trapezoid.
 
@@ -42,23 +42,23 @@
 
 ## ACTION INITALIZATION
 
-   A newly introduced class, B1::ActionInitialization, instantiates and registers
+   A newly introduced class, cherenkov::ActionInitialization, instantiates and registers
    to Geant4 kernel all user action classes.
 
    While in sequential mode the action classes are instatiated just once,
    via invoking the method:
-      B1::ActionInitialization::Build()
+      cherenkov::ActionInitialization::Build()
    in multi-threading mode the same method is invoked for each thread worker
    and so all user action classes are defined thread-local.
 
    A run action class is instantiated both thread-local
    and global that's why its instance is created also in the method
-      B1::ActionInitialization::BuildForMaster()
+      cherenkov::ActionInitialization::BuildForMaster()
    which is invoked only in multi-threading mode.
 
 ## PRIMARY GENERATOR
 
-   The primary generator is defined in the B1::PrimaryGeneratorAction class.
+   The primary generator is defined in the cherenkov::PrimaryGeneratorAction class.
    The default kinematics is a 6 MeV gamma, randomly distributed in front
    of the envelope across 80% of the transverse (X,Y) envelope size.
    This default setting can be changed via the Geant4 built-in commands
@@ -71,18 +71,18 @@
    can be found in the other examples.
 
    The energy deposited is collected step by step for a selected volume
-   in B1::SteppingAction and accumulated event by event in B1::EventAction.
+   in cherenkov::SteppingAction and accumulated event by event in cherenkov::EventAction.
 
-   At end of event, the value acummulated in B1::EventAction is added in B1::RunAction
-   and summed over the whole run (see B1::EventAction::EndOfevent()).
+   At end of event, the value acummulated in cherenkov::EventAction is added in cherenkov::RunAction
+   and summed over the whole run (see cherenkov::EventAction::EndOfevent()).
 
-   Total dose deposited is computed at B1::RunAction::EndOfRunAction(),
+   Total dose deposited is computed at cherenkov::RunAction::EndOfRunAction(),
    and printed together with informations about the primary particle.
    In multi-threading mode the energy accumulated in G4Accumulable objects per
-   workers is merged to the master in B1::RunAction::EndOfRunAction() and the final
+   workers is merged to the master in cherenkov::RunAction::EndOfRunAction() and the final
    result is printed on the screen.
 
-   G4Accumulable<G4double> type instead of G4double type is used for the B1::RunAction
+   G4Accumulable<G4double> type instead of G4double type is used for the cherenkov::RunAction
    data members in order to facilitate merging of the values accumulated on workers
    to the master.  Currently the accumulables have to be registered to G4AccumulablesManager
    and G4AccumulablesManager::Merge() has to be called from the users code. This is planned
@@ -97,7 +97,7 @@
 ## VISUALISATION
 
    The visualization manager is set via the G4VisExecutive class
-   in the main() function in exampleB1.cc.
+   in the main() function in cherenkovSim.cc.
    The initialisation of the drawing is done via a set of /vis/ commands
    in the macro vis.mac. This macro is automatically read from
    the main function when the example is used in interactive running mode.
@@ -165,7 +165,7 @@
 ## USER INTERFACES
 
    The user command interface is set via the G4UIExecutive class
-   in the main() function in exampleB1.cc
+   in the main() function in cherenkovSim.cc
 
    The selection of the user command interface is then done automatically
    according to the Geant4 configuration or it can be done explicitly via
@@ -178,9 +178,9 @@
 
 ## HOW TO RUN
 
-   - Execute exampleB1 in the 'interactive mode' with visualization
+   - Execute cherenkovSim in the 'interactive mode' with visualization
 ```
-% exampleB1
+% cherenkovSim
 and type in the commands from run1.mac line by line:
 Idle> /control/verbose 2
 Idle> /tracking/verbose 1
@@ -195,11 +195,11 @@ Idle> /control/execute run1.mac
 Idle> exit
 ```
 
-   - Execute exampleB1 in the 'batch' mode from macro files
+   - Execute cherenkovSim in the 'batch' mode from macro files
    (without visualization)
 ```
-% exampleB1 run2.mac
-% exampleB1 exampleB1.in > exampleB1.out
+% cherenkovSim run2.mac
+% cherenkovSim cherenkovSim.in > cherenkovSim.out
 ```
 
 

@@ -24,7 +24,7 @@
   // ********************************************************************
   //
   /// \file SteppingAction.cc
-  /// \brief Implementation of the B1::SteppingAction class
+  /// \brief Implementation of the cherenkov::SteppingAction class
 
   #include "SteppingAction.hh"
 
@@ -36,7 +36,7 @@
   #include "G4RunManager.hh"
   #include "G4Step.hh"
 
-  namespace B1
+  namespace cherenkov
   {
 
   //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -79,4 +79,4 @@
 
   //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-  }  // namespace B1
+  }  

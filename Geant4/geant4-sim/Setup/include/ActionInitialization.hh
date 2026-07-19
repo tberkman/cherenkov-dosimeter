@@ -24,14 +24,14 @@
 // ********************************************************************
 //
 /// \file ActionInitialization.hh
-/// \brief Definition of the B1::ActionInitialization class
+/// \brief Definition of the cherenkov::ActionInitialization class
 
 #ifndef B1ActionInitialization_h
 #define B1ActionInitialization_h 1
 
 #include "G4VUserActionInitialization.hh"
 
-namespace B1
+namespace cherenkov
 {
 
 /// Action initialization class.
@@ -46,7 +46,7 @@ class ActionInitialization : public G4VUserActionInitialization
     void Build() const override;
 };
 
-}  // namespace B1
+}  // namespace cherenkov
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

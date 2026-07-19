@@ -24,13 +24,13 @@
 // ********************************************************************
 //
 /// \file EventAction.cc
-/// \brief Implementation of the B1::EventAction class
+/// \brief Implementation of the cherenkov::EventAction class
 
 #include "EventAction.hh"
 
 #include "RunAction.hh"
 
-namespace B1
+namespace cherenkov
 {
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -54,4 +54,4 @@ void EventAction::EndOfEventAction(const G4Event*)
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-}  // namespace B1
+}  // namespace cherenkov

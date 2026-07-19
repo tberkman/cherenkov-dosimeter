@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file RunAction.hh
-/// \brief Definition of the B1::RunAction class
+/// \brief Definition of the cherenkov::RunAction class
 
 #ifndef B1RunAction_h
 #define B1RunAction_h 1
@@ -36,7 +36,7 @@
 
 class G4Run;
 
-namespace B1
+namespace cherenkov
 {
 
 /// Run action class
@@ -61,6 +61,6 @@ class RunAction : public G4UserRunAction
     G4Accumulable<G4double> fEdep2 = 0.;
 };
 
-}  // namespace B1
+}  // namespace cherenkov
 
 #endif

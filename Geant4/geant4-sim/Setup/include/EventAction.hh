@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file EventAction.hh
-/// \brief Definition of the B1::EventAction class
+/// \brief Definition of the cherenkov::EventAction class
 
 #ifndef B1EventAction_h
 #define B1EventAction_h 1
@@ -34,7 +34,7 @@
 
 class G4Event;
 
-namespace B1
+namespace cherenkov
 {
 
 class RunAction;
@@ -57,7 +57,7 @@ class EventAction : public G4UserEventAction
     G4double fEdep = 0.;
 };
 
-}  // namespace B1
+}  // namespace cherenkov
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

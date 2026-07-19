@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 /// \file ActionInitialization.cc
-/// \brief Implementation of the B1::ActionInitialization class
+/// \brief Implementation of the cherenkov::ActionInitialization class
 
 #include "ActionInitialization.hh"
 
@@ -33,7 +33,7 @@
 #include "RunAction.hh"
 #include "SteppingAction.hh"
 
-namespace B1
+namespace cherenkov
 {
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -61,4 +61,4 @@ void ActionInitialization::Build() const
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-}  // namespace B1
+}  // namespace cherenkov
