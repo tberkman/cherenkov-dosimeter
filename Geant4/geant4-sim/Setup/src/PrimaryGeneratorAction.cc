@@ -27,6 +27,7 @@
 /// \brief Implementation of the cherenkov::PrimaryGeneratorAction class
 
 #include "PrimaryGeneratorAction.hh"
+#include "G4IonTable.hh"
 
 #include "G4Box.hh"
 #include "G4LogicalVolume.hh"
@@ -48,12 +49,13 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
   fParticleGun = new G4ParticleGun(n_particle);
 
   // default particle kinematic
-  G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
-  G4String particleName;
-  G4ParticleDefinition* particle = particleTable->FindParticle(particleName = "e-");
-  fParticleGun->SetParticleDefinition(particle);
-  fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
-  fParticleGun->SetParticleEnergy(2.28 * CLHEP::MeV);
+// Get the Ion Table to find isotopes
+G4IonTable* ionTable = G4ParticleTable::GetParticleTable()->GetIonTable();
+G4ParticleDefinition* ion = ionTable->GetIon(38, 90, 0.0);
+
+fParticleGun->SetParticleDefinition(ion);
+fParticleGun->SetParticleEnergy(0.0 * CLHEP::MeV); 
+fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -94,12 +96,15 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
     G4Exception("PrimaryGeneratorAction::GeneratePrimaries()", "MyCode0002", JustWarning, msg);
   }
 
-  G4double size = 0.8;
-  G4double x0 = size * envSizeXY * (G4UniformRand() - 0.5);
-  G4double y0 = size * envSizeXY * (G4UniformRand() - 0.5);
-  G4double z0 = -0.5 * envSizeZ;
+// Set X and Y to 0 for a strict point source alignment
+G4double x0 = 0.0;
+G4double y0 = 0.0;
 
-  fParticleGun->SetParticlePosition(G4ThreeVector(x0, y0, z0));
+// Fixed the string bug: placing the point at the front face of your envelope box
+G4double z0 = -0.5 * envSizeZ; 
+
+fParticleGun->SetParticlePosition(G4ThreeVector(x0, y0, z0));
+
 
   fParticleGun->GeneratePrimaryVertex(event);
 }

@@ -11,6 +11,7 @@
 #
 # Initialize kernel
 /run/initialize
+/process/had/rdm/thresholdForVeryLongDecayTime 1.0e+27 year
 #
 # Visualization setting
 /control/execute vis.mac

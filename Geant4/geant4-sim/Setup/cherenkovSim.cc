@@ -29,7 +29,7 @@
 #include "ActionInitialization.hh"
 #include "DetectorConstruction.hh"
 #include "QBBC.hh"
-
+#include "G4RadioactiveDecayPhysics.hh"
 #include "G4RunManagerFactory.hh"
 #include "G4SteppingVerbose.hh"
 #include "G4UIExecutive.hh"
@@ -59,8 +59,8 @@ int main(int argc, char** argv)
 
   // Construct the default run manager
   //
-  auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
 
+  auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Serial);
   // Set mandatory initialization classes
   //
   // Detector construction
@@ -69,6 +69,8 @@ int main(int argc, char** argv)
   // Physics list
   auto physicsList = new QBBC;
   physicsList->SetVerboseLevel(1);
+    physicsList->RegisterPhysics(new G4RadioactiveDecayPhysics());
+
   runManager->SetUserInitialization(physicsList);
 
   // User action initialization
