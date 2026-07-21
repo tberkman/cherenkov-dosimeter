@@ -27,10 +27,11 @@
   /// \brief Implementation of the cherenkov::SteppingAction class
 
   #include "SteppingAction.hh"
+#include "RunAction.hh"
 
   #include "DetectorConstruction.hh"
   #include "EventAction.hh"
-
+#include "G4OpticalPhoton.hh"
   #include "G4Event.hh"
   #include "G4LogicalVolume.hh"
   #include "G4RunManager.hh"
@@ -62,8 +63,9 @@
           fMaxDepth = depth;
           G4cout << "New max depth: " << depth/CLHEP::cm << " cm" << G4endl;
       }
+     
+     
   }
-
 
     // get volume of the current step
     G4LogicalVolume* volume =
@@ -71,7 +73,17 @@
 
     // check if we are in scoring volume
     if (volume != fScoringVolume) return;
-
+ auto secondaries = step->GetSecondaryInCurrentStep();
+     G4int nPhot = 0;
+for (const auto& secondary : *secondaries) {
+  if (secondary->GetDefinition() == G4OpticalPhoton::OpticalPhotonDefinition()) {
+    G4double e = secondary->GetKineticEnergy();
+    if (e > 2.254*CLHEP::eV && e < 3.100*CLHEP::eV) nPhot++;
+  }
+}
+auto runAction = const_cast<RunAction*>(static_cast<const RunAction*>(
+  G4RunManager::GetRunManager()->GetUserRunAction()));
+runAction->AddPhoton(nPhot);
     // collect energy deposited in this step
     G4double edepStep = step->GetTotalEnergyDeposit();
     fEventAction->AddEdep(edepStep);

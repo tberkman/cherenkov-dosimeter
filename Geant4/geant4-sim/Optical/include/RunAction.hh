@@ -55,10 +55,12 @@ class RunAction : public G4UserRunAction
     void EndOfRunAction(const G4Run*) override;
 
     void AddEdep(G4double edep);
-
+void AddPhoton(G4int k) { fPhotonCount += k; }
   private:
     G4Accumulable<G4double> fEdep = 0.;
     G4Accumulable<G4double> fEdep2 = 0.;
+    G4Accumulable<G4int> fPhotonCount;
+
 };
 
 }  // namespace cherenkov

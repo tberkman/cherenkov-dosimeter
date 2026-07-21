@@ -63,6 +63,8 @@ RunAction::RunAction()
   G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
   accumulableManager->Register(fEdep);
   accumulableManager->Register(fEdep2);
+    accumulableManager->Register(fPhotonCount);
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -134,6 +136,7 @@ void RunAction::EndOfRunAction(const G4Run* run)
   G4cout << "  --> mass of scoring volume = " << G4BestUnit(mass, "Mass") << G4endl << G4endl; 
   G4cout << " Absorbed dose per run in scoring volume = edep/mass = " << G4BestUnit(dose, "Dose")
          << "; rms = " << G4BestUnit(rmsDose, "Dose") << G4endl
+         << "Photons produced on average in scoring volume = " << fPhotonCount.GetValue()/(G4double)nofEvents << G4endl
          << "------------------------------------------------------------" << G4endl << G4endl;
 }
 
